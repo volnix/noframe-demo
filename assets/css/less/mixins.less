@@ -1,0 +1,63 @@
+.FullBtn {
+	display: block;
+	width: 100%;
+	margin: 0px 3px 0px 3px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.FullBG(@bg) {
+	
+	background: @bg no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.FullBG(@height) {
+	
+	margin-top: -10px;
+	padding-top: 80px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: @height;
+	width: 100%;
+	display: block;
+	background-size: cover;
+}
+
+.Scale(@starting_size) {
+	@media (max-width: @screen-phone-max) {
+		font-size: .75 * @starting_size;
+	}
+
+	/* Tablet-portrait */
+	@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+		font-size: .85 * @starting_size;
+	}
+	
+	/* Tablet-landscape */
+	@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+		font-size: .95 * @starting_size;
+	}
+	
+	/* Desktop */
+	@media (min-width: @screen-lg-min) {
+		font-size: 1 * @starting_size;
+	}
+}
+
+.Margin(@up-down: auto, @right-left: auto) {
+	margin-top: @up-down;
+	margin-bottom: @up-down;
+	margin-left: @right-left;
+	margin-right: @right-left;
+}
+
+.HardHide {
+	display: none !important;
+	visibility: hidden !important;
+}

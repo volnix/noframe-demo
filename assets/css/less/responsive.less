@@ -1,0 +1,74 @@
+/* Phones */
+@media (max-width: @screen-phone-max) {
+
+	.row.btn-block {
+		
+		margin-right: 0px;
+		margin-left: 0px;
+	
+		div[class*='col'] {
+	
+			padding-left: 5px;
+			padding-right: 5px;
+			
+			.btn {
+				.FullBtn;
+			}
+		}
+	}
+	
+	input.form-control {
+		width: 90%;
+	}
+	
+	h2#app-name {
+		margin-top: auto;
+	}
+	
+	h1#agency-name {
+		font-size: 20px;
+	}
+	
+	div#branding-text {
+		text-align: center;
+		margin:	10px 0px 10px 0px;
+	}
+	
+	.hidden-xss {
+		.HardHide;
+	}
+	
+	input#dc_num {
+		text-align: center;
+		font-weight: bold;
+	}
+	
+	div.form-group p.help-block {
+		font-size: .8em !important;
+	}
+}
+
+/* Tablet-portrait */
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+	input.form-control {
+		width: 85%;
+	}
+	
+	.hidden-xss {
+		.HardHide;
+	}
+}
+
+/* Tablet-landscape */
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+	input.form-control {
+		width: 75%;
+	}
+}
+
+/* Desktop */
+@media (min-width: @screen-lg-min) {
+	input.form-control {
+		width: 65%;
+	}
+}

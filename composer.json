@@ -1,0 +1,37 @@
+{
+	"name": "simple/demo",
+	"description": "Demo using the simple framework.",
+	"license": "MIT",
+	
+	"authors": [
+		{
+			"name": "Nick Volgas",
+			"email": "n.volgas@gmail.com"
+		}
+	],
+	
+	"repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/volnix/simple"
+        }
+    ],
+    
+	"autoload": {
+        "psr-4": {
+            "Simple\\Demo\\Controllers\\": "app/controllers/",
+            "Simple\\Demo\\Models\\": "app/models/",
+            "Simple\\Demo\\Views\\": "app/views/"
+        }
+    },
+    
+    "require": {
+	    "php": ">= 5.4",
+	    "simple/core": "dev-master",
+	    "illuminate/database": "*",
+		"fuelphp/config": "dev-master",
+		"league/plates": "1.0.*"
+    },
+    
+    "minimum-stability": "dev"
+}

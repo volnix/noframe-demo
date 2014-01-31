@@ -1,0 +1,71 @@
+@import "variables.less";
+@import "mixins.less";
+@import "responsive.less";
+
+body {
+	.FullBG(url(../img/header-bg.jpg));
+}
+
+#content {
+	h1 {
+		color: white;
+		.Margin(40px);
+	}
+}
+
+#inner-content {
+	
+	form {
+		label {
+			color: white;
+			font-size: 1em;
+		}
+		
+		.form-control {
+			width: 24em;
+		}
+		
+		#nom-comment {
+			height: 12em;
+		}
+	}
+}
+
+#page-description {
+	vertical-align: middle;
+	text-align: center;
+	padding: 40px;
+	background-color: #e0e0e0;
+}
+
+#header {
+	
+	.container {
+		@media (max-width: @screen-md-max) {
+			margin-left: 5px;
+			margin-right: 5px;
+			padding-right: 0px;
+			padding-left: 0px;
+			width: auto;
+		}
+	}
+	
+	#menu-title {
+		color: white;
+		font-weight: bold;
+		margin-left: 40px;
+		.Scale(2em);
+		
+		@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+			margin-left: 5px;
+		}
+	}
+}
+
+@media (max-width: @screen-sm-max) {
+
+	#menu-title {
+		margin: 0px;
+		padding: 0px;
+	}
+}
