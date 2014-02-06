@@ -19,9 +19,13 @@ class Demo {
 			'page_title' => "Simple Demo"
 		];
 		
-		if (!empty($_POST['text']))
+		if (!empty($_POST['name']))
 		{
-			$viewdata['message'] = $_POST['text'];
+			$user = new \Simple\Demo\Models\Users;
+			$user->name = $_POST['name'];
+			$user->save();
+			
+			$viewdata['name'] = $_POST['name'];
 		}
 		
 		echo $this->template->render("demo/index", $viewdata);

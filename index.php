@@ -16,10 +16,10 @@ class_alias('Fuel\Common\Arr', 'Arr');
 $config->addPath('app/config');
  
 // load illuminate
-//$capsule = new \Illuminate\Database\Capsule\Manager; 
-//$capsule->addConnection($config->load("database"));
-//$capsule->setAsGlobal();
-//$capsule->bootEloquent();
+$capsule = new \Illuminate\Database\Capsule\Manager; 
+$capsule->addConnection($config->load("database"));
+$capsule->setAsGlobal();
+$capsule->bootEloquent();
 
 // go
 \Simple\Router::start();
