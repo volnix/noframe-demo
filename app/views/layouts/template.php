@@ -22,7 +22,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		
-		<link rel="stylesheet" type="text/css" href="/personal/simple_demo/assets/css/app.css" />	
+		<link rel="stylesheet" type="text/css" href="/personal/noframe-demo/assets/css/app.css" />	
 
 		<style>
 			@-webkit-viewport   { width: device-width; }

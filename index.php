@@ -22,5 +22,4 @@ $config->addPath('app/config');
 //$capsule->bootEloquent();
 
 // go
-$app = new \Simple\Core\Router;
-$app->start();
+\Simple\Router::start();

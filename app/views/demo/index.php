@@ -8,7 +8,7 @@
 		}
 	?>
 	
-	<form role="form" method="post" action="<?= \Simple\Core\Router::base("demo/index") ?>" class="form-horizontal">
+	<form role="form" method="post" action="<?= \Simple\Router::base("demo/index") ?>" class="form-horizontal">
 		<div class="form-group">
 			<label for="text" class="col-sm-5 control-label">Type something in this box</label>
 			<div class="col-sm-7">

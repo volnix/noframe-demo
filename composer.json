@@ -2,18 +2,18 @@
 	"name": "simple/demo",
 	"description": "Demo using the simple framework.",
 	"license": "MIT",
-	
+
 	"authors": [
 		{
 			"name": "Nick Volgas",
 			"email": "n.volgas@gmail.com"
 		}
 	],
-	
+
 	"repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/volnix/simple"
+            "url": "https://github.com/volnix/simple-router"
         }
     ],
     
@@ -27,7 +27,7 @@
     
     "require": {
 	    "php": ">= 5.4",
-	    "simple/core": "dev-master",
+	    "simple/router": "dev-master",
 	    "illuminate/database": "*",
 		"fuelphp/config": "dev-master",
 		"league/plates": "1.0.*"
