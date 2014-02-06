@@ -4,8 +4,6 @@ namespace Simple\Demo;
 
 require_once(__DIR__ . DIRECTORY_SEPARATOR . "vendor" . DIRECTORY_SEPARATOR . "autoload.php");
 
-define("INDEX", basename(__FILE__));
-define("APP_NAMESPACE", "Simple\\Demo");
 define("ENVIRONMENT", "local");
 define("APP_PATH", __DIR__ . DIRECTORY_SEPARATOR . "app" . DIRECTORY_SEPARATOR);
 
@@ -22,4 +20,4 @@ $capsule->setAsGlobal();
 $capsule->bootEloquent();
 
 // go
-\Simple\Router::start();
+\Simple\Router::start("Simple\\Demo");
