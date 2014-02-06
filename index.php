@@ -5,7 +5,6 @@ namespace Simple\Demo;
 require_once(__DIR__ . DIRECTORY_SEPARATOR . "vendor" . DIRECTORY_SEPARATOR . "autoload.php");
 
 define("ENVIRONMENT", "local");
-define("APP_PATH", __DIR__ . DIRECTORY_SEPARATOR . "app" . DIRECTORY_SEPARATOR);
 
 // spin up our config mgmt
 $config = new \Fuel\Config\Container(ENVIRONMENT);

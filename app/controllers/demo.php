@@ -8,7 +8,7 @@ class Demo {
 
 	public function __construct()
 	{
-		$this->template = new \League\Plates\Template(new \League\Plates\Engine(APP_PATH . "views"));
+		$this->template = new \League\Plates\Template(new \League\Plates\Engine("app/views"));
 		$this->template->layout('layouts/template');
 		$this->template->site_title = "Simple Framework Demo";
 	}
